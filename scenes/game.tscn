@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://25t4epwh6oti" path="res://scenes/slime.tscn" id="6_p57ef"]
 [ext_resource type="FontFile" uid="uid://bwrm8st6i0vrq" path="res://assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://d2x2bamhom36w" path="res://scenes/slime_purple.tscn" id="8_purple"]
+[ext_resource type="PackedScene" path="res://scenes/touch_controls.tscn" id="9_touch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iywne"]
 texture = ExtResource("2_yqjtg")
@@ -353,6 +354,8 @@ _data = {
 
 [node name="Game" type="Node2D" unique_id=1402666274]
 
+[node name="TouchControls" parent="." instance=ExtResource("9_touch")]
+
 [node name="GameManager" type="Node" parent="." unique_id=1646663972]
 unique_name_in_owner = true
 script = ExtResource("1_gee14")
@@ -365,7 +368,7 @@ offset_bottom = 66.0
 theme_override_colors/font_color = Color(0.007843138, 0.14901961, 0.34901962, 1)
 theme_override_fonts/font = ExtResource("2_vtaks")
 theme_override_font_sizes/font_size = 8
-text = "You collected 1 coins."
+text = "Coins: 0/7"
 horizontal_alignment = 1
 autowrap_mode = 2
 

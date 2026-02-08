@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://npq8rnhpvojs"]
+
+[ext_resource type="Script" uid="uid://c4lqalfqoiy6h" path="res://scripts/touch_controls.gd" id="1_touch"]
+[ext_resource type="FontFile" uid="uid://evu57b0huf7h" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_n26gd"]
+
+[node name="TouchControls" type="CanvasLayer" unique_id=398570614]
+layer = 10
+script = ExtResource("1_touch")
+
+[node name="Control" type="Control" parent="." unique_id=303622380]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftButton" type="Button" parent="Control" unique_id=1009171275]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.35
+anchor_bottom = 1.0
+offset_left = 72.0
+offset_top = -136.0
+offset_right = -171.19998
+offset_bottom = -36.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_n26gd")
+theme_override_font_sizes/font_size = 32
+text = "◀"
+
+[node name="RightButton" type="Button" parent="Control" unique_id=761662614]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.35
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -136.0
+offset_right = 76.80002
+offset_bottom = -36.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_n26gd")
+theme_override_font_sizes/font_size = 32
+text = "▶"
+
+[node name="JumpButton" type="Button" parent="Control" unique_id=939551728]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -136.0
+offset_right = -46.0
+offset_bottom = -36.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_n26gd")
+theme_override_font_sizes/font_size = 32
+text = "JUMP"

@@ -10,7 +10,7 @@ var direction = 1
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.has_method("hit_enemy"):
-		body.hit_enemy()
+		body.hit_enemy(global_position)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

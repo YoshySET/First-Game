@@ -214,7 +214,7 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=290864407]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_tuyoq")
-animation = &"hurt"
+animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.87144196
 
@@ -230,9 +230,8 @@ bus = &"SFX"
 stream = ExtResource("4_hitsnd")
 bus = &"SFX"
 
-[node name="HurtTimer" type="Timer" parent="."]
-wait_time = 1.0
+[node name="HurtTimer" type="Timer" parent="." unique_id=75753810]
+wait_time = 0.5
 one_shot = true
-autostart = false
 
 [connection signal="timeout" from="HurtTimer" to="." method="_on_hurt_timer_timeout"]
