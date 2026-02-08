@@ -15,12 +15,6 @@ run/main_scene="uid://u24acv4ftw3f"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
-
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
-window/handheld/orientation=0
-
 [audio]
 
 buses/default_bus_layout="uid://dxbltby5qjdwq"
@@ -28,6 +22,11 @@ buses/default_bus_layout="uid://dxbltby5qjdwq"
 [autoload]
 
 Music="*uid://m1vh5n3ntx5f"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [input]
 
@@ -57,3 +56,4 @@ move_right={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+textures/vram_compression/import_etc2_astc=true
